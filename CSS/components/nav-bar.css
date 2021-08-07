@@ -1,0 +1,51 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 13px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  color: #2e363e;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn {
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 14px;
+  top: -8px;
+  animation: notificationanimation 2s ease-in-out infinite;
+}
+
+@keyframes notificationanimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.nav__noficiation-2 {
+  display: flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  left: 25px;
+  top: -5px;
+}

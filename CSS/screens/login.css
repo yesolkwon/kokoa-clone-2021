@@ -1,0 +1,62 @@
+.welcome-header{
+    margin:100px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-header__title{
+    font-size:20px;
+    font-weight: 600;
+    
+}
+
+.welcome-header__text{
+    margin-top:35px;
+    width:60%;
+    text-align: center;
+    opacity:0.7;
+    font-size: 12px;
+}
+
+#loginform{
+    display:flex;
+    flex-direction: column;
+}
+
+#loginform input{
+    border:none;
+    padding:10px 3px;
+    margin-bottom:10px;
+   
+}
+
+#loginform input::placeholder{
+    color:rgba(0,0,0,0.4);
+}
+
+
+#loginform input:not([type="submit"]){
+    border-bottom:1px solid rgba(0,0,0,0.4);
+    transition: border-color 0.5s ease-in-out;
+}
+
+#loginform input:focus{
+    border-color:var(--yellow);
+}
+
+#loginform input[type="submit"]{
+    background-color:var(--yellow);
+    font-size:15px;
+    cursor: pointer;
+    padding:12px;
+    border-radius: 5px;
+}
+
+#loginform a {
+    margin-top:10px;
+    text-decoration:none;
+    text-align:center;
+    color:inherit;
+    font-size:14px;
+
+}
